@@ -1,6 +1,11 @@
 import os
 import subprocess
 
+input_directory = "./videos"
+output_directory = "./compressed"
+
+os.makedirs(output_directory, exist_ok=True)
+
 # Compress downloaded videos to 480p resolution, 30fps frame rate, and 128k audio bitrate
 for filename in os.listdir(input_directory):
     input_file = os.path.join(input_directory, filename)
