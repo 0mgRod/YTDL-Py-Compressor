@@ -1,5 +1,4 @@
 import os
-import subprocess
 from yt_dlp import YoutubeDL
 
 # Set input and output directories
